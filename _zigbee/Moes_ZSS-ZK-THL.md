@@ -38,8 +38,9 @@ This impact of this issue can be reduced by creating a template sensor in the ho
           {% else %}
             {## Don't change the state ##}
             {{ 
-              states("sensor.moes_thermometer_temperature_filtered") {## Should match with the name entered above ##}
+              states("sensor.moes_thermometer_temperature_filtered")
             }}
+            {## Should match with the name entered above ##}
           {% endif %}
         unit_of_measurement: "°C"{% endraw %} 
 {% endhighlight %}
